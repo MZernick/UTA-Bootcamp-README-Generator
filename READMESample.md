@@ -1,7 +1,7 @@
-# README Generator <img src="https://img.shields.io/badge/license-MIT License-blue.svg" alt="GitHub License">
+# ReadMe Generator <img src="https://img.shields.io/badge/license-MIT License-blue.svg" alt="GitHub License">
 
 ## Description
-    This application is intended to give an easy ste-by-step guide in which the user is prompted with questions and is able to easily input answers then a ReadMe file is created which is already equipped with proper syntax.
+    To create ReadMe files quick and efficiently
     
 ## Table of Contents
     
@@ -16,13 +16,13 @@
     N/A
     
 ## Usage
-    This application is created to produce and easy, efficent, and routine way to create a ReadMe file.
+    To create ReadMe files routinely
 
 ## License
     MIT License
 ## How to Contribute
-    Do not touch the coconut.
+    N/A
 ## Test 
-    Run it using node in the terminal of your Visual Studio Code application
+    Run in terminal in your visual studio applicaiton
 ## Questions
-    Please address all questions through https://github.com/MZernick or directly through email at Mfzernick@gmail.com
+    Please address all questions through https://github.com/MZernick or directly through email at MZernick

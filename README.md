@@ -17,6 +17,8 @@
     
 ## Usage
     This application is created to produce an easy, efficent, and routine ReadMe.
+    To view functionality, please view the following video.
+    https://drive.google.com/file/d/1-i1ckgaIo0gm2qqryuTOb9isMCxZwrD0/view
 
 ## License
     MIT License
