@@ -3,15 +3,11 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 // TODO: Create an array of questions for user input
 
-function getBadge(){
-    if (license === 'MIT license')
-    var licenseBadge = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
-    else if (license=== 'Apache License 2.0')
-    var licenseBadge = `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
-    else if (license === 'The Unlicense')
-    var licenseBadge = '[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)';
-    else if (license === 'ISC')
-    var licenseBadge = `[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)`;
+function getBadge(license){
+    if (license !== "None") {
+    return `<img src="https://img.shields.io/badge/license-${license}-blue.svg" alt="GitHub License">`;
+  }
+  return " ";
 };
 
 const questions = [
@@ -32,7 +28,7 @@ const questions = [
     },
     {
       type: 'input',
-      message: 'How do you install this applicaiton?',
+      message: 'How do you install this application?',
       name: 'install',
     },
     {
@@ -66,7 +62,7 @@ const questions = [
 
 // TODO: Create a function to write README file
 const writeToFile = ({title, description, install, usage, license, contribution, test, github, email}) =>
-    `# ${title}
+    `# ${title} ${getBadge(license)}
 
 ## Description
     ${description}
@@ -101,7 +97,7 @@ function init() {
     .then((answers) => {
         const readmePageContent = writeToFile(answers);
         // console.log(readmePageContent);
-        fs.writeFile('README.md', readmePageContent, (err) =>
+        fs.writeFile('READMESample.md', readmePageContent, (err) =>
           err ? console.log(err) : console.log('Successfully created README.md!')
         );
       });
