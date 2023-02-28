@@ -38,6 +38,11 @@ const questions = [
     },
     {
         type: 'input',
+        message: 'Please name any contributors?',
+        name: 'contributors',
+    },
+    {
+        type: 'input',
         message: 'What are the contribution guidelines?',
         name: 'contribution',
     },
@@ -61,7 +66,7 @@ const questions = [
 
 
 // TODO: Create a function to write README file
-const writeToFile = ({title, description, install, usage, license, contribution, test, github, email}) =>
+const writeToFile = ({title, description, install, usage, license, contributors, contribution, test, github, email}) =>
     `# ${title} ${getBadge(license)}
 
 ## Description
@@ -84,10 +89,16 @@ const writeToFile = ({title, description, install, usage, license, contribution,
 
 ## License
     ${license}
+
+## Contributors
+    ${contributors}
+
 ## How to Contribute
     ${contribution}
+
 ## Test 
     ${test}
+
 ## Questions
     Please address all questions through https://github.com/${github} or directly through email at ${email}`;
 

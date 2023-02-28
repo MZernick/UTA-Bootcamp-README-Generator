@@ -1,7 +1,7 @@
-# ReadMe Generator <img src="https://img.shields.io/badge/license-MIT License-blue.svg" alt="GitHub License">
+#  <img src="https://img.shields.io/badge/license--blue.svg" alt="GitHub License">
 
 ## Description
-    To create ReadMe files quick and efficiently
+    
     
 ## Table of Contents
     
@@ -13,16 +13,22 @@
 - [Questions](#questions)
     
 ## Installation
-    N/A
+    
     
 ## Usage
-    To create ReadMe files routinely
+    
 
 ## License
-    MIT License
+    
+
+## Contributors
+    Me
+
 ## How to Contribute
-    N/A
+    
+
 ## Test 
-    Run in terminal in your visual studio applicaiton
+    
+
 ## Questions
-    Please address all questions through https://github.com/MZernick or directly through email at MZernick
+    Please address all questions through https://github.com/ or directly through email at 
